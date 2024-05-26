@@ -1,0 +1,53 @@
+
+.recent-post img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+.recent-post .media {
+    margin-bottom: 15px;
+}
+.truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    
+}
+.card-footer {
+background-color: #1e90ff;
+}
+.media {
+background-color: #f8f9fa;
+padding: 15px;
+border-radius: 10px;
+}
+
+.comment-text {
+margin-bottom: 10px;
+}
+
+.comment-footer {
+font-size: 14px;
+}
+@media (min-width: 768px) {
+.commenter-info {
+  display: flex;
+}
+}
+
+
+.collapse.show {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

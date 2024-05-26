@@ -1,0 +1,83 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+    <section id="hero" class="d-flex align-items-center" style="height: fit-content !important;">
+        
+    </section>
+  
+    <section id="blog2" data-aos="fade-up">
+    <div class="container my-5 mx-auto">
+        <div class="section-title">
+            <h2>Blogs</h2>
+            <a href="index.html" style="color: #1e90ff; display: inline-block; margin-bottom: 10px;">
+                <i class="fas fa-arrow-left"></i> Back to Home
+            </a>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 offset-md-2">
+                        <div class="card mt-5">
+                            <img src="{{ blog_post.image }}" class="card-img-top" alt="Blog Post Image">
+                            <div class="card-body">
+                                <h3 class="card-title">{{ blog_post.title }}</h3>
+                                <p class="card-text">
+                                    {{ blog_post.content }}
+                                </p>
+                            </div>
+                            <div class="card-footer " style="text-align: left !important;">
+                                <span>
+                                    <i class="far fa-thumbs-up"></i> {{ blog_post.likes }} Likes
+                                </span>
+                                <span class="float-right">
+                                    <i class="far fa-comment"></i> {{ blog_post.comments.count }} Comments
+                                </span>
+                            </div>
+                        </div>
+                        <div class="comments mt-4">
+                            <h4>Comments</h4>
+                            {% for comment in comments %}
+                            
+                            <div class="media mb-4 mt-4" >
+                                <div class="media-head d-flex align-items-center">
+                                  <img src="https://picsum.photos/50" class="mr-3 rounded-circle" alt="User Avatar">
+                                <h5 class="ml-5">{{ comment.name}}</h5>
+                                </div>
+                                <div class="media-body" style="text-align: left !important;">
+                                    <p class="comment-text">{{comment.comment}}</p>
+                                    <div class="comment-footer">
+                                        <span class="text-muted mr-2"><i class="far fa-thumbs-up"></i> 5</span>
+                                        <a href="#" class="text-muted"><i class="far fa-comment"></i> Reply</a>
+                                    </div>
+                                </div>
+                            </div>
+                            {% empty %}
+                            <p>No comments yet. Be the first to comment!</p>
+                            {% endfor %}
+                        </div>
+                       <div class="card " style="text-align: left !important;">
+                                <h5 class="card-header">Leave a Comment</h5>
+                                <div class="card-body">
+                                    <form id="commentForm" style="margin-bottom:  0;">
+                                        <div class="form-group">
+                                            <textarea class="form-control" rows="3" id="comment" placeholder="Write your comment..."></textarea>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                    </form>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+
+    document.getElementById('backToIndex').addEventListener('click', function(event) {
+        event.preventDefault(); 
+
+        window.location.href = 'index.html';
+    });
+    </script>
+
+   {% endblock %}

@@ -1,0 +1,781 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+    <!-- ======= Hero Section ======= -->
+    <section id="hero" class="d-flex align-items-center">
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <h1>Breaking Barriers | Building Careers</h1>
+            <div class="d-flex justify-content-center justify-content-lg-start">
+              <a href="#about" class="btn-get-started scrollto">Get Started</a>
+              <!-- <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Watch Video</span></a> -->
+            </div>
+          </div>
+          <div
+            class="col-lg-6 order-1 order-lg-2 hero-img"
+            data-aos="zoom-in"
+            data-aos-delay="200"
+          >
+            <img
+              src="{% static 'assets/img/hero-img.png' %}"
+              class="img-fluid animated"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Hero -->
+
+    <main id="main">
+      <!-- ======= About Us Section ======= -->
+      <section id="about" class="about">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>About </h2>
+          </div>
+
+          <div class="row content">
+            <div class="col-lg-6">
+              <p>
+                UmEmployed is an ambitious startup committed to reshaping the
+                job market. Our mission is to provide a user-friendly platform,
+                that delivers real-time, accurate application responses. We
+                seeks to address applicant issues and offer a dynamic solution
+                that benefits job seekers, students, recruiters, and companies.
+              </p>
+            </div>
+            <div class="col-lg-6 pt-4 pt-lg-0">
+              <ul>
+                <li>
+                  <i class="ri-check-double-line"></i> Real-time application
+                  responses
+                </li>
+                <li>
+                  <i class="ri-check-double-line"></i> User-friendly platform
+                </li>
+                <li>
+                  <i class="ri-check-double-line"></i> Addressing applicant
+                  issues
+                </li>
+              </ul>
+
+              <a href="#" class="btn-learn-more">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End About Us Section -->
+
+      <!-- ======= Why Us Section ======= -->
+      <section id="why-us" class="why-us section-bg">
+        <div class="container-fluid" data-aos="fade-up">
+          <div class="row">
+            <div class="content">
+              <h2>Our Vision</h2>
+              <p>
+                In March, our focus remained steadfast on advancing our
+                algorithm development for real-time processes. We've made
+                significant strides in refining the algorithm to ensure its
+                efficiency and accuracy, laying a robust foundation for its
+                practical application. Through these efforts, we are not only
+                advancing our technological capabilities but also fostering
+                valuable partnerships that will drive the widespread adoption
+                and impact of our real-time process algorithm. As we move
+                forward, we remain committed to pushing the boundaries of
+                innovation and collaboration to achieve our shared objectives.
+              </p>
+            </div>
+            <div
+              class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch order-2 order-lg-1"
+            >
+              <div class="accordion-list">
+                <ul>
+                  <li>
+                    <a
+                      data-bs-toggle="collapse"
+                      data-bs-target="#accordion-list-1"
+                      ><span>01</span>Revolutionizing the Job Market
+                      Experience<i class="bx bx-chevron-up icon-show"></i
+                        ><i class="bx bx-chevron-down icon-close"></i
+                      ></a>
+                    <div
+                      id="accordion-list-1"
+                      class="collapse "
+                      data-bs-parent=".accordion-list"
+                    >
+                      <p>
+                        UmEmployed is not just another job website; it's a
+                        transformative force in the employment landscape. Our
+                        vision goes beyond mere job listings; we're pioneering a
+                        platform that revolutionizes how individuals connect
+                        with opportunities. By prioritizing user experience and
+                        leveraging cutting-edge technology, we're empowering job
+                        seekers, students, recruiters, and companies alike. Join
+                        us in reshaping the future of work.
+                      </p>
+                    </div>
+                  </li>
+
+                  <li>
+                    <a
+                      data-bs-toggle="collapse"
+                      data-bs-target="#accordion-list-2"
+                      class="collapsed"
+                      ><span>02</span> Empowering Career Growth
+                      <i class="bx bx-chevron-down icon-show"></i
+                      ><i class="bx bx-chevron-up icon-close"></i
+                    ></a>
+                    <div
+                      id="accordion-list-2"
+                      class="collapse"
+                      data-bs-parent=".accordion-list"
+                    >
+                      <p>
+                        At UmEmployed, we envision a world where every
+                        individual has the tools and support they need to thrive
+                        in their career journey. Our platform isn't just about
+                        finding a job; it's about kick-starting careers and
+                        fostering continuous growth. Through personalized
+                        suggestions, real-time feedback, and seamless
+                        communication, we're empowering individuals to take
+                        charge of their professional lives and achieve their
+                        aspirations.
+                      </p>
+                    </div>
+                  </li>
+
+                  <li>
+                    <a
+                      data-bs-toggle="collapse"
+                      data-bs-target="#accordion-list-3"
+                      class="collapsed"
+                      ><span>03</span> Forging Strategic Partnerships for
+                      Impactful Change
+                      <i class="bx bx-chevron-down icon-show"></i
+                      ><i class="bx bx-chevron-up icon-close"></i
+                    ></a>
+                    <div
+                      id="accordion-list-3"
+                      class="collapse"
+                      data-bs-parent=".accordion-list"
+                    >
+                      <p>
+                        Collaboration is at the heart of our vision at
+                        UmEmployed. We understand that to truly revolutionize
+                        the job market, we need to work hand-in-hand with
+                        educational institutions, recruiters, and companies. By
+                        forging strategic partnerships with colleges and other
+                        stakeholders, we're not only enhancing the adoption of
+                        our innovative solutions but also driving meaningful
+                        change. Together, we're building a future where finding
+                        and filling job positions is efficient, seamless, and
+                        empowering for all.
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-5 align-items-stretch order-1 order-lg-2 img"
+              style="background-image: url('assets/img/why-us.png')"
+              data-aos="zoom-in"
+              data-aos-delay="150"
+            >
+              &nbsp;
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Why Us Section -->
+
+      <!-- ======= Services Section ======= -->
+      <section id="services" class="services section-bg">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Services</h2>
+            <p>
+              Explore our range of innovative solutions designed to
+              revolutionize how you approach job hunting, career development,
+              and recruitment
+            </p>
+          </div>
+
+          <div class="row">
+            <div
+              class="col-xl-3 col-md-6 d-flex align-items-stretch"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              <div class="icon-box">
+                <div class="icon"><i class="bx bxl-dribbble"></i></div>
+                <h4><a href="">Instant Application Feedback</a></h4>
+                <p>Get real-time responses to job applications.</p>
+              </div>
+            </div>
+
+            <div
+              class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0"
+              data-aos="zoom-in"
+              data-aos-delay="200"
+            >
+              <div class="icon-box">
+                <div class="icon"><i class="bx bx-file"></i></div>
+                <h4><a href="">Custom Career Advice</a></h4>
+                <p>
+                  Receive personalized guidance for your professional journey.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0"
+              data-aos="zoom-in"
+              data-aos-delay="300"
+            >
+              <div class="icon-box">
+                <div class="icon"><i class="bx bx-tachometer"></i></div>
+                <h4><a href="">Efficient Recruitment Tools</a></h4>
+                <p>Streamline hiring processes with our platform.</p>
+              </div>
+            </div>
+
+            <div
+              class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0"
+              data-aos="zoom-in"
+              data-aos-delay="400"
+            >
+              <div class="icon-box">
+                <div class="icon"><i class="bx bx-layer"></i></div>
+                <h4><a href="">Academic Collaborations</a></h4>
+                <p>Partner with us to empower student career readiness.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Services Section -->
+
+      <!-- ======= Cta Section ======= -->
+      <section id="cta" class="cta">
+        <div class="container" data-aos="zoom-in">
+          <div class="row">
+            <div class="col-lg-9 text-center text-lg-start">
+              <h3>Notification</h3>
+              <p>
+                Ready to take your career to the next level? Explore our
+                services today and unlock the full potential of your
+                professional journey. Join us in reshaping the future of work.
+                Let's get started!
+              </p>
+            </div>
+            <div class="col-lg-3 cta-btn-container text-center">
+              <a class="cta-btn align-middle" href="#">Notify Me</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Cta Section -->
+
+      <!-- ======= Team Section ======= -->
+      <section id="team" class="team section-bg">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Team</h2>
+            <p>
+              Meet the driving force behind our innovative solutions and
+              transformative vision. Discover the dedicated individuals shaping
+              the future of the job market.
+            </p>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-6">
+              <div
+                class="member d-flex align-items-start"
+                data-aos="zoom-in"
+                data-aos-delay="100"
+              >
+                <div class="pic">
+                  <img
+                    src="{% static 'assets/img/team/team-1.jpg' %}"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <div class="member-info">
+                  <h4>Amandeep Jaswal</h4>
+                  <span>CEO/Co-founder</span>
+                  <p>
+                   Hello !! Comming soon
+                  </p>
+                  <div class="social">
+                    <a href="https://www.linkedin.com/in/Amandeep-jaswal-profile/"> <i class="ri-linkedin-box-fill"></i> </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 mt-4 mt-lg-0">
+              <div
+                class="member d-flex align-items-start"
+                data-aos="zoom-in"
+                data-aos-delay="200"
+              >
+                <div class="pic">
+                  <img
+                    src="{% static 'assets/img/team/team-1.jpg' %}"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <div class="member-info">
+                  <h4>Parth Bhatt</h4>
+                  <span>CTO/Co-founder</span>
+                  <p>
+                    Hello !! Coming Soon !!
+                  </p>
+                  <div class="social">
+                    <a href="https://www.linkedin.com/in/parthbhatt17/"> <i class="ri-linkedin-box-fill"></i> </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            
+
+           
+          </div>
+        </div>
+      </section>
+      <!-- End Team Section -->
+
+      <!-- ======= Frequently Asked Questions Section ======= -->
+      <section id="faq" class="faq section-bg">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Frequently Asked Questions</h2>
+            Explore our frequently asked questions to learn more about our
+            innovative solutions, seamless processes, and collaborative
+            partnerships. If you don't find the answer you're looking for, feel
+            free to reach out to our team for personalized assistance. Let's
+            navigate your journey towards success together.
+          </div>
+
+          <div class="faq-list">
+            <ul>
+              <li data-aos="fade-up" data-aos-delay="100">
+                <i class="bx bx-help-circle icon-help"></i>
+                <a
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faq-list-1"
+                  class="collapsed"
+                  >How does UmEmployed ensure the accuracy of real-time
+                  application responses?<i
+                    class="bx bx-chevron-down icon-show"
+                  ></i
+                  ><i class="bx bx-chevron-up icon-close"></i
+                ></a>
+                <div
+                  id="faq-list-1"
+                  class="collapse"
+                  data-bs-parent=".faq-list"
+                >
+                  <p>
+                    We employ a sophisticated algorithm that continuously
+                    analyzes and updates data to provide precise feedback on job
+                    applications, ensuring accuracy and relevance.
+                  </p>
+                </div>
+              </li>
+
+              <li data-aos="fade-up" data-aos-delay="200">
+                <i class="bx bx-help-circle icon-help"></i>
+                <a
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faq-list-2"
+                  class="collapsed"
+                  >Can I customize the career guidance I receive on UmEmployed?
+                  <i class="bx bx-chevron-down icon-show"></i
+                  ><i class="bx bx-chevron-up icon-close"></i
+                ></a>
+                <div
+                  id="faq-list-2"
+                  class="collapse"
+                  data-bs-parent=".faq-list"
+                >
+                  <p>
+                    Absolutely! Our platform utilizes personalized algorithms to
+                    tailor career advice based on your unique skills, interests,
+                    and goals, empowering you with insights that resonate with
+                    your professional journey.
+                  </p>
+                </div>
+              </li>
+
+              <li data-aos="fade-up" data-aos-delay="300">
+                <i class="bx bx-help-circle icon-help"></i>
+                <a
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faq-list-3"
+                  class="collapsed"
+                  >How does UmEmployed streamline the hiring process for
+                  recruiters and companies?
+                  <i class="bx bx-chevron-down icon-show"></i
+                  ><i class="bx bx-chevron-up icon-close"></i
+                ></a>
+                <div
+                  id="faq-list-3"
+                  class="collapse"
+                  data-bs-parent=".faq-list"
+                >
+                  <p>
+                    We offer a suite of efficient tools and features designed to
+                    simplify candidate sourcing, screening, and communication,
+                    enabling recruiters and companies to find the best-fit
+                    candidates quickly and effectively.
+                  </p>
+                </div>
+              </li>
+
+              <li data-aos="fade-up" data-aos-delay="400">
+                <i class="bx bx-help-circle icon-help"></i>
+                <a
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faq-list-4"
+                  class="collapsed"
+                  >What benefits do educational institution partnerships with
+                  UmEmployed offer?<i class="bx bx-chevron-down icon-show"></i
+                  ><i class="bx bx-chevron-up icon-close"></i
+                ></a>
+                <div
+                  id="faq-list-4"
+                  class="collapse"
+                  data-bs-parent=".faq-list"
+                >
+                  <p>
+                    Collaborating with UmEmployed allows educational
+                    institutions to enhance student career readiness through
+                    access to cutting-edge resources, fostering seamless
+                    transitions from academia to the workforce.
+                  </p>
+                </div>
+              </li>
+
+              <li data-aos="fade-up" data-aos-delay="500">
+                <i class="bx bx-help-circle icon-help"></i>
+                <a
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faq-list-5"
+                  class="collapsed"
+                  >Is UmEmployed suitable for all industries and job types?<i
+                    class="bx bx-chevron-down icon-show"
+                  ></i
+                  ><i class="bx bx-chevron-up icon-close"></i
+                ></a>
+                <div
+                  id="faq-list-5"
+                  class="collapse"
+                  data-bs-parent=".faq-list"
+                >
+                  <p>
+                    Yes, our platform caters to a diverse range of industries
+                    and job roles, ensuring that individuals from various
+                    backgrounds and fields can benefit from our services and
+                    resources.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    <section id="blog" data-aos="fade-up">
+  <div class="container my-5 mx-auto">
+    <div class="section-title">
+      <h2>Blogs</h2>
+      <p>
+        Discover expert advice, insider tips, and inspiring stories to supercharge your career journey.
+      </p>
+    </div>
+    <div class="row">
+      <!-- Blog Post Loop -->
+      {% for blog_post in blog_posts %}
+
+      <div class="col-md-6" data-aos="fade-up" data-aos-delay="{{ blog_post.1 }}">
+        <div class="card mb-4">
+          <img src="{{ blog_post.0.image }}" class="card-img-top" alt="Random Image">
+          <div class="card-body">
+            <h3 class="card-title">{{ blog_post.0.title }}</h3>
+            <p class="card-text truncate collapseExample">
+              {{ blog_post.0.content }}
+            </p>
+            <button class="btn btn-primary read-more" data-toggle="collapse" data-target="#collapseExample{{ forloop.counter }}">Read More</button>
+            <a href="{% url 'blog_post_detail' blog_post.0.pk %}" class="btn btn-primary">Visit Blog</a>
+          </div>
+          <div class="card-footer text-muted">
+            <span class="float-right">
+              <a href="{% url 'like_blog_post' blog_post.0.id %}" class="text-muted mr-2 like-button" data-blog-post="{{ blog_post.0.id }}">
+                <i class="far fa-thumbs-up"></i>
+                <span class="like-count">{{ blog_post.0.likes }}</span>
+              </a>
+              <a href="javascript:void(0)" class="text-muted comment-button" data-toggle="modal" data-target="#commentModal{{ blog_post.0.id }}">
+                <i class="far fa-comment"></i> {{ blog_post.0.comments_count }}
+              </a>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Comment Modal -->
+      <div class="modal fade" id="commentModal{{ blog_post.0.id }}" tabindex="-1" role="dialog" aria-labelledby="commentModalLabel{{ blog_post.0.id }}" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="commentModalLabel{{ blog_post.0.id }}">Leave a Comment</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form id="commentForm{{ blog_post.0.id }}" method="POST">
+                {% csrf_token %}
+                <div class="form-group">
+                  <label for="nameInput{{ blog_post.0.id }}">Name</label>
+                  <input type="text" class="form-control" id="nameInput{{ blog_post.0.id }}" name="name" required>
+                </div>
+                <div class="form-group">
+                  <label for="commentInput{{ blog_post.0.id }}">Comment</label>
+                  <textarea class="form-control" id="commentInput{{ blog_post.0.id }}" name="comment" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Comment Modal -->
+      {% endfor %}
+    </div>
+
+    <!-- Comment Section -->
+    <div class="card my-4">
+      <h5 class="card-header">Leave a Comment</h5>
+      <div class="card-body">
+        
+      </div>
+    </div>
+
+    <!-- Existing Comments -->
+    <div class="media mb-4">
+      <div class="media-head d-flex align-items-center">
+        <img src="https://picsum.photos/50" class="mr-3 rounded-circle" alt="User Avatar">
+        <h5 class="ml-5">Eddy</h5>
+      </div>
+      <div class="media-body">
+        <p class="comment-text">Great post! Thanks for the tips.</p>
+        <div class="comment-footer">
+          <span class="text-muted mr-2"><i class="far fa-thumbs-up"></i> 5</span>
+          <a href="#" class="text-muted"><i class="far fa-comment"></i> Reply</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="media mb-4">
+      <div class="media-head align-items-center d-flex">
+        <img src="https://picsum.photos/49" class="mr-3 rounded-circle" alt="User Avatar">
+        <h5 class="ml-5">Bill</h5>
+      </div>
+      <div class="media-body">
+        <p class="comment-text">Interesting topic! I learned a lot.</p>
+        <div class="comment-footer">
+          <span class="text-muted mr-2"><i class="far fa-thumbs-up"></i> 3</span>
+          <a href="#" class="text-muted"><i class="far fa-comment"></i> Reply</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="media mb-4">
+      <div class="media-head align-items-center d-flex">
+        <img src="https://picsum.photos/55" class="mr-3 rounded-circle" alt="User Avatar">
+        <h5 class="ml-5">Enu</h5>
+      </div>
+      <div class="media-body">
+        <p class="comment-text">I have a question about the third paragraph.</p>
+        <div class="comment-footer">
+          <span class="text-muted mr-2"><i class="far fa-thumbs-up"></i> 2</span>
+          <a href="#" class="text-muted"><i class="far fa-comment"></i> Reply</a>
+        </div>
+      </div>
+    </div>
+  
+</section>
+
+    
+ 
+
+      <!-- End Frequently Asked Questions Section -->
+
+      <!-- ======= Contact Section ======= -->
+      <section id="contact" class="contact">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Contact</h2>
+            <p>
+              Reach out to us using the information provided below, and our
+              dedicated team will be happy to assist you. Let's connect and work
+              together towards your professional goals.
+            </p>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-5 d-flex align-items-stretch">
+              <div class="info">
+                <div class="address">
+                  <i class="bi bi-geo-alt"></i>
+                  <h4>Location:</h4>
+                  <p>New York, NY</p>
+                </div>
+
+                <div class="email">
+                  <i class="bi bi-envelope"></i>
+                  <h4>Email:</h4>
+                  <p>info@umemployed.com</p>
+                </div>
+
+                <div class="phone">
+                  <i class="bi bi-phone"></i>
+                  <h4>Call:</h4>
+                  <p>+1 234 456 789</p>
+                </div>
+
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"
+                  frameborder="0"
+                  style="border: 0; width: 100%; height: 290px"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+
+            <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+              <form
+              id="contact-form"
+              action=""
+              method="post"
+              enctype="text/plain"
+              role="form"
+              class="php-email-form"
+            >
+            {% csrf_token %}
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <label for="name">Your Name</label>
+                  <input
+                    type="text"
+                    name="name"
+                    class="form-control"
+                    id="name"
+                    required
+                  />
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="email">Your Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    name="email"
+                    id="email"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="subject"
+                  id="subject"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea
+                  class="form-control"
+                  name="message"
+                  id="message"
+                  rows="10"
+                  maxlength="150"
+                  required
+                ></textarea>
+                <div class="char-counter" id="char-counter">150 characters left</div>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center">
+                <button type="submit">Send Message</button>
+              </div>
+            </form>
+            {% for message in messages %}
+            {{ message }}
+            {% endfor %}
+            <div id="thank-you" style="display:none; color: #1E90FF;">Thank you for contacting us!</div>
+            <div id="try-again" style="display:none; color: #1E90FF;">Please try again later.</div>
+          </div>
+        </div>
+      </section>
+      <script>
+        $(document).ready(function() {
+  $('#contact-form').submit(function(e) {
+    e.preventDefault();
+
+    var form = $(this);
+    var formData = form.serialize();
+
+    $.ajax({
+      type: 'POST',
+      url: '/contact-us/', // Replace 'your_backend_url_here' with your actual backend URL
+      data: formData,
+      success: function(response) {
+        alert('Thank you for contacting us!');
+        // If the request is successful, check the response for success
+        if (response.success) {
+          $('#sent-message').css('display', 'block');
+          $('#try-again').css('display', 'none');
+          form.trigger('reset'); // Reset the form fields
+        } else {
+          $('#try-again').css('display', 'block');
+          $('#sent-message').css('display', 'none');
+          alert('Something went wrong please try again!');
+        }
+      },
+      error: function(xhr, status, error) {
+        // If there's an error, display the error message
+        $('#try-again').css('display', 'block');
+        $('#sent-message').css('display', 'none');
+      }
+    });
+  });
+});
+      </script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+      
+      <!-- End Contact Section -->
+    </main>
+    <!-- End #main -->
+
+    {% endblock %}
