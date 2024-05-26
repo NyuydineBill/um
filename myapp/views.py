@@ -21,12 +21,16 @@ def blog_post_list(request):
 
 def blog_post_detail(request, pk):
     blog_post = get_object_or_404(BlogPost, pk=pk)
-    comments = Comment.objects.filter(pk=pk)
-    return render(request, 'comment.html', {'blog_post': blog_post , 'comments':comments})
+    comments = Comment.objects.filter(blog_post=blog_post)
+    print(comments)
+    return render(request, 'comment.html', {'blog_post': blog_post, 'comments': comments})
 
 
 from django.shortcuts import get_object_or_404
 
+from django.views.decorators.csrf import csrf_exempt
+
+@csrf_exempt
 def like_blog_post(request, pk):
     if request.method == 'POST':
         blog_post = get_object_or_404(BlogPost, pk=pk)
