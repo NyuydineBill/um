@@ -100,6 +100,10 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+# EmailJS settings
+EMAILJS_USER_ID = os.getenv('EMAILJS_USER_ID')
+EMAILJS_SERVICE_ID = os.getenv('EMAILJS_SERVICE_ID')
+EMAILJS_TEMPLATE_ID = os.getenv('EMAILJS_TEMPLATE_ID')
 
 # Internationalization
 # https://docs.djangoproject.com/en/5.0/topics/i18n/
