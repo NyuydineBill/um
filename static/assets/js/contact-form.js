@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
       charCounter.textContent = `${remaining} characters left`;
     });
   
-    emailjs.init(""); 
+    emailjs.init("mblP6JX16V1oBmApv"); 
   
     document.getElementById('contact-form').addEventListener('submit', function(event) {
       event.preventDefault();
@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
         message: document.getElementById("message").value
       };
   
-      emailjs.send("service_6w3kp0j", "template_5iouf44", params)
+      emailjs.send("service_iil7tk8", "template_q47pb6b", params)
       .then(function() {
         document.getElementById("thank-you").style.display = "block";
         document.getElementById("contact-form").reset();
