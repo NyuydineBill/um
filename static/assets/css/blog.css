@@ -50,4 +50,13 @@ font-size: 14px;
       transform: translateY(0);
     }
   }
+  .like-button .fa-thumbs-up {
+    color: #6c757d;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .like-button.liked .fa-thumbs-up {
+    color: #1E90FF;
+    font-weight: bold;
+  }
   
