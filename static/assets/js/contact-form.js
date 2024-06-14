@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
+  console.log("-------------------------------------------")
   const messageField = document.getElementById('message');
   const charCounter = document.getElementById('char-counter');
 
@@ -6,11 +7,12 @@ document.addEventListener('DOMContentLoaded', function() {
     const remaining = 150 - messageField.value.length;
     charCounter.textContent = `${remaining} characters left`;
   });
-  emailjs.init("");
+  emailjs.init("mb1P6JX16V1oBmApv");
 
   document.getElementById('contact-form').addEventListener('submit', function(event) {
     event.preventDefault();
-
+    
+    console.log("***************************************************")
     var params = {
       name: document.getElementById("name").value,
       email: document.getElementById("email").value,
